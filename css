@@ -1,0 +1,112 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap; 
+  box-sizing: border-box;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #1e272e;   
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  color: #ab3a4c;  
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00cec9;
+}
+
+.section {
+  height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+#home {
+  background-color:  #ffa394;   
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;
+  padding-top: 8rem; 
+  min-height: 100vh;
+  text-align: center;
+}
+
+#home .content {
+  max-width: 800px;
+  margin-top: 5vh;
+
+}
+
+#about {
+  background-color:  #ffcaa1; 
+  color: #1e272e;  
+  align-items: center;              
+  text-align: left;
+}
+
+#services {
+  background-color: #dce3ad ;
+  color: #1e272e;
+  align-items: center;              
+  text-align: left;
+}
+
+#contact {
+  background-color: #a8dcb7 ;   
+  color: white;
+  align-items: center;              
+  text-align: left;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
